@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: copy file vie ssh password
+        uses: appleboy/scp-action@v0.1.4
         with: 
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
